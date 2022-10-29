@@ -3,7 +3,8 @@
 1. Part 1 Simplest Search Engine
 
 Code:
-`import java.io.IOException;
+```
+import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
 
@@ -47,7 +48,8 @@ class SearchEngine {
 
         Server.start(port, new Handler());
     }
-} `
+} 
+```
 
 *add 'pineapple' to the list
 ![Image](pineapple.png)
@@ -62,7 +64,7 @@ class SearchEngine {
 2. Part 2 Choose two of the bugs from different files above
 
 *Array Methods
-
+```
 The failure inducing input for me was {1,2,3,4,5}. The symptom was that Arrays first differed at element [3]; expected:<2> but was:<4>.
 
 ..E.
@@ -88,28 +90,31 @@ Caused by: java.lang.AssertionError: expected:<2> but was:<4>
 
 FAILURES!!!
 Tests run: 3,  Failures: 1
-
+```
 Test I wrote:
+```
 `@Test
  public void testReverse2(){
    int [] input2 = {1,2,3,4,5};
    ArrayExamples.reverseInPlace(input2);
    assertArrayEquals(new int[]{5,4,3,2,1},input2);
- }`
-
+ }
+```
 To avoid it, I changed it to have a variable to store the values
-`static void reverseInPlace(int[] arr) {
+```
+static void reverseInPlace(int[] arr) {
    for(int i = 0; i < arr.length/2; i += 1) { 
      int temp = arr[i];
      arr[i] = arr[arr.length - i - 1];
      arr[arr.length-i-1] = temp;
    }
- }`
-
+ }
+```
 *List Methods
 
 Test I wrote:
-`public class ListTests {
+```
+public class ListTests {
    @Test
    public void ListTest1() {
        List<String> input = new ArrayList<String>();
@@ -123,10 +128,10 @@ Test I wrote:
        output.add("orange");
        assertEquals(output,input);
    }      
-}`
-
+}
+```
 The syptom is 
-
+```
 .E
 Time: 0.08
 There was 1 failure:
@@ -140,15 +145,17 @@ java.lang.AssertionError: expected:<[banana, orange]> but was:<[orange, banana]>
 
 FAILURES!!!
 Tests run: 1,  Failures: 1
-
+```
 The problem with the code of this method is that the list is returned in an opposite order, so I thought of just adding s to the end 
   
 To fix the problem, I changed it to be 
-  `static List<String> filter(List<String> list, StringChecker sc) {
+  ```
+   static List<String> filter(List<String> list, StringChecker sc) {
    List<String> result = new ArrayList<>();
    for(String s: list) {
      if(sc.checkString(s)) {
        result.add(s);
+       ```
      }
    }`
 
