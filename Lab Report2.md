@@ -64,8 +64,10 @@ class SearchEngine {
 2. Part 2 Choose two of the bugs from different files above
 
 *Array Methods
+
+The failure inducing input for me was {1,2,3,4,5}. The symptom was that 
 ```
-The failure inducing input for me was {1,2,3,4,5}. The symptom was that Arrays first differed at element [3]; expected:<2> but was:<4>.
+Arrays first differed at element [3]; expected:<2> but was:<4>.
 
 ..E.
 Time: 0.05
@@ -155,9 +157,10 @@ To fix the problem, I changed it to be
    for(String s: list) {
      if(sc.checkString(s)) {
        result.add(s);
-       ```
+       
      }
-   }`
+   }
+   ```
 
 
 
