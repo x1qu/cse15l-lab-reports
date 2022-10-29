@@ -50,14 +50,14 @@ class SearchEngine {
     }
 } 
 ```
+**Method called right here is handleRequest. Values right here is localhost:4000/add?s=pineapple, value of the field is the arraylist item [pineapple], if the values are changed, whatever is after add?s would be added to the arraylist.
 
-*add 'pineapple' to the list
 ![Image](pineapple.png)
 
-*add 'apple' to the list
+**Method called right here is handleRequest. Values right here is localhost:4000/add?s=apple, value of the field is the arraylist item [apple,pineapple], if the values are changed, whatever is after add?s would be added to the arraylist, but before pineapple since add is the method to add to the 0th item of the arraylist.
 ![Image](apple.png)
 
-*print out what are in the list(I tried adding before so right now it has 2 pineapples, 2 apples, and 1 anewstringtoadd)
+**Method called right here is handleRequest. Values right here is localhost:4000/search?s=app, value of the field is the arraylist item [anewstringtoadd,pineapple,apple,pineapple,apple](I tried adding before so right now it has more items in the arraylist), the method creates a new arraylist to see whether it contains specific content, if the values are changed, whatever is after search?s would be seen whether they are in the arraylist.
 ![Image](search.png)
 
 
