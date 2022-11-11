@@ -3,7 +3,7 @@
 
 1. Less command-line options:
 ```-E or --QUIT-AT-EOF
- ```
+```
 
 Causes less to automatically exit.
 
