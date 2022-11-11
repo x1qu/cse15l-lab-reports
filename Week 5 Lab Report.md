@@ -6,6 +6,7 @@
 Causes less to automatically exit.
 
 Examples:
+
 Command I put in:
 ```(base) apple@dagedademacbook docsearch % less README.md -e```
 
@@ -61,6 +62,8 @@ This is important because it quits automatically so it could save time.
 
 Forces non-regular(a directory or a device special file) files to be opened.   
 
+Examples:
+
 Command I put in:
 ```(base) apple@dagedademacbook docsearch % less README.md -f```
 
@@ -115,6 +118,8 @@ This is important because you get to force to open certain files that could be u
 3. Less command-line options: ```--N or --LINE-NUMBERS```
 
 Display a line number at the beginning of each line.
+
+Examples:
 
 Command I put in:
 ```(base) apple@dagedademacbook docsearch % less -N README.md ```
