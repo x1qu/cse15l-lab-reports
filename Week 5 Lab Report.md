@@ -11,10 +11,13 @@ Examples:
 Command I put in:
 ```(base) apple@dagedademacbook docsearch % less README.md -e ```
 
-Result I got: ```The technical/ directory is a subdirectory of
+Result I got: 
+```
+The technical/ directory is a subdirectory of
 https://anc.org/data/oanc/download/
 
-~```
+~
+```
 
 Command I put in:
 ```(base) apple@dagedademacbook docsearch % less find-results.txt -e ```
