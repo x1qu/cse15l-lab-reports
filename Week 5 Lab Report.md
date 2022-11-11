@@ -1,14 +1,17 @@
 #Week 5 Lab Report
 
 
-1. Less command-line options:```-E or --QUIT-AT-EOF```
+1. Less command-line options:
+```-E or --QUIT-AT-EOF
+ ```
 
 Causes less to automatically exit.
 
 Examples:
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less README.md -e```
+```(base) apple@dagedademacbook docsearch % less README.md -e
+```
 
 Result I got:
 ```The technical/ directory is a subdirectory of
@@ -18,9 +21,11 @@ https://anc.org/data/oanc/download/
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less find-results.txt -e ```
+```(base) apple@dagedademacbook docsearch % less find-results.txt -e 
+```
 
 Result I got:
+
 ```
 ...
 technical/plos/pmed.0010034.txt
@@ -36,7 +41,8 @@ technical/plos/pmed.0020242.txt
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less Server.java -e ```
+```(base) apple@dagedademacbook docsearch % less Server.java -e 
+```
 
 Result I got:
 ```
@@ -58,14 +64,17 @@ public class Server {
 
 This is important because it quits automatically so it could save time.
 
-2. Less command-line options: ```-f or --force```
+2. Less command-line options: 
+```-f or --force
+```
 
 Forces non-regular(a directory or a device special file) files to be opened.   
 
 Examples:
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less README.md -f```
+```(base) apple@dagedademacbook docsearch % less README.md -f
+```
 
 Result I got:
 ```The technical/ directory is a subdirectory of
@@ -75,7 +84,8 @@ https://anc.org/data/oanc/download/
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less find-results.txt -f ```
+```(base) apple@dagedademacbook docsearch % less find-results.txt -f 
+```
 
 Result I got:
 ```
@@ -95,7 +105,8 @@ technical/plos/pmed.0020242.txt
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less Server.java -f ```
+```(base) apple@dagedademacbook docsearch % less Server.java -f 
+```
 
 Result I got:
 ```
@@ -115,14 +126,17 @@ ublic static void start(int port, URLHandler handler) throws IOException {
 
 This is important because you get to force to open certain files that could be unprocessable by less.
 
-3. Less command-line options: ```--N or --LINE-NUMBERS```
+3. Less command-line options: 
+```--N or --LINE-NUMBERS
+```
 
 Display a line number at the beginning of each line.
 
 Examples:
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less -N README.md ```
+```(base) apple@dagedademacbook docsearch % less -N README.md 
+```
 
 Result I got:
 ```
@@ -142,7 +156,8 @@ Result I got:
 ``` 
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less -N find-results.txt ```
+```(base) apple@dagedademacbook docsearch % less -N find-results.txt 
+```
 
 Result I got:
 ``` 
@@ -163,7 +178,8 @@ Result I got:
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less -N Server.java ```
+```(base) apple@dagedademacbook docsearch % less -N Server.java 
+```
 
 Result I got:
 ``` 
