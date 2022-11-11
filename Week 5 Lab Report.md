@@ -2,27 +2,26 @@
 
 
 1. Less command-line options:
-```-E or --QUIT-AT-EOF
-```
+```-E or --QUIT-AT-EOF ```
 
 Causes less to automatically exit.
 
 Examples:
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less README.md -e
-```
+```(base) apple@dagedademacbook docsearch % less README.md -e ```
 
 Result I got:
+
 ```The technical/ directory is a subdirectory of
 https://anc.org/data/oanc/download/
 
 ~
+
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less find-results.txt -e 
-```
+```(base) apple@dagedademacbook docsearch % less find-results.txt -e ```
 
 Result I got:
 
@@ -38,13 +37,14 @@ technical/plos/journal.pbio.0020012.txt
 technical/plos/pmed.0020281.txt
 technical/plos/pmed.0020242.txt
 (END) - Next: -e
+
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less Server.java -e 
-```
+```(base) apple@dagedademacbook docsearch % less Server.java -e ```
 
 Result I got:
+
 ```
 ...
 public class Server {
@@ -60,35 +60,38 @@ public class Server {
     }
 }
 (END) - Next: -e
+
 ```
 
 This is important because it quits automatically so it could save time.
 
 2. Less command-line options: 
-```-f or --force
-```
+```-f or --force ```
 
 Forces non-regular(a directory or a device special file) files to be opened.   
 
 Examples:
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less README.md -f
-```
+```(base) apple@dagedademacbook docsearch % less README.md -f ```
 
 Result I got:
-```The technical/ directory is a subdirectory of
+```
+
+The technical/ directory is a subdirectory of
 https://anc.org/data/oanc/download/
 
 (END) - Next: -f
+
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less find-results.txt -f 
-```
+```(base) apple@dagedademacbook docsearch % less find-results.txt -f ```
 
 Result I got:
+
 ```
+
 ...
 technical/plos/pmed.0020082.txt
 technical/plos/pmed.0010021.txt
@@ -102,15 +105,17 @@ technical/plos/journal.pbio.0020012.txt
 technical/plos/pmed.0020281.txt
 technical/plos/pmed.0020242.txt
 (END) - Next: -f
+
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less Server.java -f 
-```
+```(base) apple@dagedademacbook docsearch % less Server.java -f ```
 
 Result I got:
+
 ```
-ublic static void start(int port, URLHandler handler) throws IOException {
+
+public static void start(int port, URLHandler handler) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
 
         //create request entrypoint
@@ -122,24 +127,25 @@ ublic static void start(int port, URLHandler handler) throws IOException {
     }
 }
 (END) - Next: -f
+
 ```
 
 This is important because you get to force to open certain files that could be unprocessable by less.
 
 3. Less command-line options: 
-```--N or --LINE-NUMBERS
-```
+```--N or --LINE-NUMBERS ```
 
 Display a line number at the beginning of each line.
 
 Examples:
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less -N README.md 
-```
+```(base) apple@dagedademacbook docsearch % less -N README.md ```
 
 Result I got:
+
 ```
+
 1 The technical/ directory is a subdirectory of
       2 https://anc.org/data/oanc/download/
       3 
@@ -153,14 +159,16 @@ Result I got:
 ~
 ~
 (END)
+
 ``` 
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less -N find-results.txt 
-```
+```(base) apple@dagedademacbook docsearch % less -N find-results.txt ```
 
 Result I got:
-``` 
+
+```
+
 ...
 242 technical/plos/pmed.0020055.txt
     243 technical/plos/pmed.0020082.txt
@@ -175,14 +183,16 @@ Result I got:
     252 technical/plos/pmed.0020281.txt
     253 technical/plos/pmed.0020242.txt
 (END)
+
 ```
 
 Command I put in:
-```(base) apple@dagedademacbook docsearch % less -N Server.java 
-```
+```(base) apple@dagedademacbook docsearch % less -N Server.java ```
 
 Result I got:
-``` 
+
+```
+
 ...
 42 public class Server {
      43     public static void start(int port, URLHandler handler) throws IOException {
@@ -197,6 +207,7 @@ Result I got:
      52     }
      53 }
 (END)
+
 ```
 
 
