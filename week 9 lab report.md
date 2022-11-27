@@ -1,6 +1,7 @@
 # Lab Report week 9
 
 1. code:
+
 ```
 rm -rf student-submission
 git clone $1 student-submission
@@ -19,7 +20,6 @@ else
    exit
 fi
  
-
 cp TestListExamples.java student-submission
 cp -rf lib student-submission
 cd student-submission
@@ -47,18 +47,22 @@ else
    grep "Tests run" test_result.txt
 fi
 echo "Grade: [$score/3]"
-
 ```
+
 2. screenshots:
 https://github.com/ucsd-cse15l-f22/list-methods-lab3
 ![Image](pic1.png)
+
 https://github.com/ucsd-cse15l-f22/list-methods-corrected
 ![Image](pic2.png)
+
 https://github.com/ucsd-cse15l-f22/list-methods-compile-error
 ![Image](pic3.png)
 
 3.trace
+
 I chose https://github.com/ucsd-cse15l-f22/list-methods-compile-error
+
 ```
 FILE=student-submission/ListExamples.java
 SUBMISSION_FILE=ListExamples.java
@@ -86,11 +90,14 @@ fi
 ```
 
 This is to check whether the file can be compiled, since the file has a syntax error of a missing semicolon, 
-it is false so returns ```Compile Error
+it is false so returns 
+
+```Compile Error
 ListExamples.java:15: error: ';' expected
         result.add(0, s)
                         ^
 1 error
-Grade: [1/3]```
+Grade: [1/3]
+```
 
 and then exits and shows the score.
