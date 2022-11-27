@@ -2,7 +2,6 @@
 
 1. code:
 ```
-# Create your grading script here
 
 #set -e
  
@@ -11,7 +10,6 @@ git clone $1 student-submission
  
 score=0
  
-# check the existence of the file
 FILE=student-submission/ListExamples.java
 SUBMISSION_FILE=ListExamples.java
 if [[ -f "$FILE" ]]
@@ -30,7 +28,6 @@ cp -rf lib student-submission
 cd student-submission
 CPATH=".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar"
  
-# check if file compiles
 javac -cp $CPATH *.java 2> compile_error.txt
 
 if [[ $? -eq 0 ]]; then
@@ -45,7 +42,6 @@ else
 fi
 
 
-#run tests
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > test_result.txt
 if [[ $? -eq 0 ]];then
    echo "All tests passed. [1 point]"
@@ -90,6 +86,7 @@ else
     exit
 fi
 ```
+
 This is to check whether the file can be compiled, since the file has a syntax error of a missing semicolon, 
 it is false so returns ```Compile Error
 ListExamples.java:15: error: ';' expected
@@ -97,4 +94,5 @@ ListExamples.java:15: error: ';' expected
                         ^
 1 error
 Grade: [1/3]```
+
 and then exits and shows the score.
