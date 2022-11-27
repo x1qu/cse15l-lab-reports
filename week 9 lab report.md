@@ -2,9 +2,6 @@
 
 1. code:
 ```
-
-#set -e
- 
 rm -rf student-submission
 git clone $1 student-submission
  
@@ -41,7 +38,6 @@ else
     exit
 fi
 
-
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > test_result.txt
 if [[ $? -eq 0 ]];then
    echo "All tests passed. [1 point]"
@@ -71,7 +67,9 @@ then
    echo "$SUBMISSION_FILE is submitted successfully. [1 piont]"
    ((score+=1))
 ```
+
 This is to check whether the file exists, and it is true if returns `ListExamples.java is submitted successfully. [1 piont]`
+
 ```
 javac -cp $CPATH *.java 2> compile_error.txt
 
